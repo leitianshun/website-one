@@ -1,0 +1,30 @@
+{
+  "id": "3396301",
+  "name": "dxsq-web",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "29925",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "16041683",
+      "name": "折叠5",
+      "font_class": "zhedie5",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "3734350",
+      "name": "2侧边栏",
+      "font_class": "cebianlan",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    }
+  ]
+}
