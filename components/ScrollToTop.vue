@@ -121,7 +121,7 @@
       width: 100%;
       height: 100px;
       // background: rgba(var(--thm-primary-rgb), 0.15);
-      background: green;
+      background: rgb(0, 121, 104);
 
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
@@ -137,7 +137,7 @@
       transform: scale(1.5);
       border-radius: 0;
       // background: var(--thm-primary);
-      background: green;
+      background: rgb(0, 121, 104);
       // color: red;
     }
 

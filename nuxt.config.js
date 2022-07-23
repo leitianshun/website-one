@@ -24,6 +24,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/filter', ssr: true },
+    { src: '~/plugins/xss.js', ssr: true },
+
 
   ],
 

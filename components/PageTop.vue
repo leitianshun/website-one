@@ -147,4 +147,9 @@
     //   width: 0px;
     // }
   }
+  @media only screen and (min-width: 1850px) {
+    .page-header {
+      height: 800px;
+    }
+  }
 </style>

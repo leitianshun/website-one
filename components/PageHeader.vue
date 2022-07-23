@@ -167,7 +167,7 @@
           </div>
           <hr />
           <div>
-            <p>版权所有：怀宁县大雄山泉水有限公司</p>
+            <p>版权所有：怀宁县大雄山泉水开发有限公司</p>
           </div>
         </div>
       </div>
@@ -321,14 +321,14 @@
         }
 
         .menu {
-          // width: 65%;
+          width: 240px;
           // border: 1px solid red;
           height: 100%;
           position: fixed;
           left: 0;
           top: 0;
           z-index: 20;
-          background-color: rgb(81, 121, 69);
+          background-color: rgb(94, 157, 153);
           // opacity: 1;
           transform: translateX(0);
           // visibility: visible;
@@ -362,6 +362,7 @@
               list-style: none;
               padding: 0;
               margin-top: 30px;
+              text-align: center;
               .nav-item {
                 .nav-link {
                   color: white;

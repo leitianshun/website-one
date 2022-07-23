@@ -93,7 +93,7 @@
                     <div class="title">
                       <p>
                         <i class="fa fa-comments"></i>
-                        {{ item.viewCount }}回复
+                        {{ item.viewCount }} 查看
                       </p>
                       <h4>
                         <nuxt-link :to="`/news/${item.id}`" text-truncate>{{ item.title }}</nuxt-link>
@@ -162,7 +162,7 @@
       text-align: center;
       margin: auto;
       line-height: 50px;
-      background-color: rgb(122, 184, 255);
+      background-color: green;
       color: white;
     }
   }

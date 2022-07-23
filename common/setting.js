@@ -29,5 +29,5 @@ module.exports = {
   // 客户端密钥
   clientSecret: "rider_secret",
   tenantMode: true, // 是否开启租户模式
-  tenantId: "501587", // 管理组租户编号
+  tenantId: "244481", // 管理组租户编号
 };

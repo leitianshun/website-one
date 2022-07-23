@@ -4,10 +4,10 @@
     <PageTop :image-url="`${cdnUrl}/images/qnzyq2.png`" />
     <ProductCenter
       title="产品展示"
-      type-one="桶装水系列"
-      text-one="层层过滤，严格把控质量，优质饮用天然桶装水"
-      type-two="瓶装水系列"
-      text-two="400米深岩,弱碱性高锶天然矿泉水" />
+      type-one="大雄山泉桶装水系列"
+      text-one="大雄山泉桶装水"
+      type-two="大雄山泉瓶装水系列"
+      text-two="大雄山泉瓶装水" />
   </div>
 </template>
 <script>
@@ -24,6 +24,9 @@
     data() {
       return { cdnUrl };
     },
+    // created(){
+    //   if(proces)
+    // }
   };
 </script>
 <style lang="scss" scoped></style>

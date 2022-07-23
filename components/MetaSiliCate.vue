@@ -3,14 +3,14 @@
     <hr />
     <div class="sm">
       <div class="text">
-        <h4>||坚持水源地灌装 大雄山泉提升品质生活</h4>
+        <h4>||水源地灌装 大雄山泉提升品质生活</h4>
         <p>
-          大雄山位于安徽省怀宁县境内，为怀宁县第二高峰。以大雄山为界，山南为平山镇，山北为声名远播的馒头之乡江镇镇，江镇镇新联村雄山自然村，有一口千年自涌古泉虽然历经岁月沧桑，依旧清澈如碧，潺流不息。井水主要为岩溶水，富含多种微量元素，偏硅酸含量达到35mg/L，超出矿泉水标准值25mg/L。大雄山泉坚持水源地建厂、水源地罐装，不添加任何人工矿物质，确保每一滴大雄山泉都来自大雄山自涌泉，更致力于水源地保护，为消费者搬运真正的源头好水。
+          大雄山位于安徽省怀宁县境内，为怀宁县第二高峰。以大雄山为界，山南为平山镇，山北为声名远播的馒头之乡江镇镇，江镇镇新联村雄山自然村，有一口千年自涌古泉虽然历经岁月沧桑，依旧清澈如碧潺流不息。井水主要为岩溶水，富含多种微量元素，偏硅酸含量达到35mg/L，超出矿泉水标准值25mg/L大雄山泉坚持水源地建厂、水源地罐装，不添加任何人工矿物质，确保每一滴大雄山泉都来自大雄山自涌泉，更致力于水源地保护，为消费者搬运真正的源头好水。
         </p>
       </div>
       <img :src="`${cdnUrl}/images/dxsqsm.png`" style="width: 100%" alt="" />
     </div>
-    <img :src="`${cdnUrl}/images/pgs_01.gif`" style="width: 100%" alt="" />
+    <img :src="`${cdnUrl}/images/pgs_01.png`" style="width: 100%" alt="" />
     <img :src="`${cdnUrl}/images/ph1.png`" style="width: 100%" alt="" />
     <img :src="`${cdnUrl}/images/ph2.png`" style="width: 100%" alt="" />
     <img :src="`${cdnUrl}/images/ph3.png`" style="width: 100%" alt="" />
@@ -32,12 +32,12 @@
         </div>
       </div>
     </div> -->
-    <img :src="`${cdnUrl}/images/pgs_03.gif`" style="width: 100%" alt="" />
+    <img :src="`${cdnUrl}/images/pgs_03.png`" style="width: 100%" alt="" />
     <!-- <img src="../static/images/pgs_04.gif" style="width: 100%" alt="" /> -->
 
-    <img :src="`${cdnUrl}/images/pgs_07.gif`" style="width: 100%; margin-top: 10px" alt="" />
-    <img :src="`${cdnUrl}/images/pgs_05.gif`" style="width: 100%" alt="" />
-    <img :src="`${cdnUrl}/images/pgs_06.gif`" style="width: 100%" alt="" />
+    <!-- <img :src="`${cdnUrl}/images/pgs_07.png`" style="width: 100%; margin-top: 10px" alt="" /> -->
+    <img :src="`${cdnUrl}/images/pgs_05.png`" style="width: 100%" alt="" />
+    <img :src="`${cdnUrl}/images/pgs_06.png`" style="width: 100%" alt="" />
     <hr />
   </div>
 </template>
@@ -117,6 +117,7 @@
         height: 470px;
         text-align: center;
         position: relative;
+
         .text {
           width: 100%;
           position: absolute;
@@ -130,7 +131,8 @@
             width: 100%;
             height: 270px;
             padding: 0 20px;
-            text-align: left;
+            // text-align: left;
+            text-align: justify;
             margin-top: 20px;
           }
         }

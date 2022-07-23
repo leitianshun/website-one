@@ -127,7 +127,7 @@
         width: 100%;
 
         .jianjie {
-          height: 780px;
+          height: 700px;
           position: relative;
           display: flex;
           flex-direction: column;
@@ -140,7 +140,7 @@
           img {
             position: absolute;
             width: 100%;
-            height: 300px;
+            height: 200px;
             bottom: 0;
           }
           h5 {
@@ -165,10 +165,10 @@
         .show {
           padding: 0 10px;
           width: 100%;
-          height: 430px;
+          height: 300px;
           img {
-            width: 354px;
-            height: 350px;
+            width: 100%;
+            height: 200px;
             // margin-left: 130px;
           }
         }

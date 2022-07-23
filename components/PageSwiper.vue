@@ -122,4 +122,25 @@
       }
     }
   }
+  @media only screen and (min-width: 1850px) {
+    .containers {
+      height: 780px;
+
+      .rows {
+        height: 100%;
+
+        .swiper {
+          width: 100%;
+          height: 100%;
+
+          .slide {
+            .img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 </style>

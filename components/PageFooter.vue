@@ -5,20 +5,29 @@
       <p>公司地址： 安徽省安庆市怀宁县江镇镇新联村</p>
       <p>订水电话：0556-4629268</p>
       <!-- <p>服务热线：4009-123009</p> -->
-      <p>企业官网：www.dxsqs.com</p>
+      <p>
+        企业官网：
+        <a style="color: white; text-decoration: none" href="http://www.dxsqs.com">www.dxsqs.com</a>
+      </p>
+      <p>
+        <a style="color: white; text-decoration: none" href="http://www.daxiongshanquan.com">www.daxiongshanquan.com</a>
+      </p>
     </div>
     <div class="center">
       <div>
         <img :src="`${cdnUrl}/images/qrcode.jpg`" alt="" />
         <p>- 扫码立即联系我们 -</p>
-        <p>工信部备案：皖ICP备2022007481</p>
+        <p>
+          工信部备案：
+          <a href="https://beian.miit.gov.cn/" style="color: white; text-decoration: none">皖ICP备2022007481</a>
+        </p>
       </div>
     </div>
     <div class="right">
-      <p>Copyright © . 安徽九个挑夫电子商务有限公司 All rights reserved.</p>
+      <p>Copyright©怀宁县大雄山泉水开发有限公司 All rights reserved.</p>
       <!-- <a href="#" @click="show = true"><i class="">微信</i></a> -->
       <!-- <a href="#" @click="show = true"><i class="">微博</i></a> -->
-      <span @click="show = true">微信公众号</span>
+      <span @click="show = true">大雄山泉微信公众号</span>
       <!-- <a style="color: white; text-decoration: none" href="https://weibo.com/u/7750659542">微博</a> -->
       <div v-if="show" class="wx-zzc" @click="show = false">
         <div style="z-index: 6; width: 200px; height: 200px">
@@ -65,7 +74,7 @@
     background-color: rgba(51, 51, 51);
     padding: 20px 0 0;
     .left {
-      width: 300px;
+      width: 330px;
       height: 100%;
       // border: 1px solid red;
     }
@@ -81,7 +90,7 @@
     }
     .right {
       cursor: pointer;
-      width: 300px;
+      width: 310px;
       height: 100%;
       // border: 1px solid red;
       text-decoration: none;

@@ -19,7 +19,19 @@
       <ul class="meta-info">
         <li>
           <a href="#">
-            <i class="fa fa-user-circle"></i>
+            <i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-file-person"
+                viewBox="2 0 16 16">
+                <path
+                  d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+                <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg>
+            </i>
             {{ item.authorName }}
           </a>
         </li>
@@ -30,7 +42,7 @@
           </a>
         </li>
       </ul>
-      <h2 class="text-truncate" style="position: relative">
+      <h2 class="text-truncate t" style="position: relative; font-size: 18px">
         <nuxt-link v-if="item.type == 1" style="text-decoration: none" :to="`/news/${item.id}`">
           {{ item.title }}
         </nuxt-link>
@@ -182,8 +194,9 @@
       li {
         position: relative;
         display: inline-block;
-        padding-left: 5px;
+        padding-left: 8px;
 
+        height: 30px;
         &:first-child {
           padding-left: 0;
         }
@@ -194,11 +207,11 @@
           line-height: 24px;
           transition: all 200ms linear;
           transition-delay: 0.1s;
+          text-decoration: none;
 
           &:hover {
             color: var(--thm-base);
           }
-
           i::before {
             position: relative;
             display: inline-block;

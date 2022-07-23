@@ -3,15 +3,18 @@
     <h2>{{ title }}</h2>
     <div class="contain" style="">
       <div class="bg" style="">
-        <h2 style="margin-top: 110px">{{ typeOne }}</h2>
-        <p>{{ textOne }}</p>
+        <h2>{{ typeOne }}</h2>
+        <h4>净含量：15.8L</h4>
+        <!-- <p>{{ textOne }}</p> -->
         <div>
           <!-- <button class="btns">+</button> -->
         </div>
       </div>
+
       <div class="bgs">
-        <h2 style="margin-top: 110px">{{ typeTwo }}</h2>
-        <p>{{ textTwo }}</p>
+        <h2>{{ typeTwo }}</h2>
+        <h4>净含量：4.5L</h4>
+        <!-- <p>{{ textTwo }}</p> -->
         <div>
           <!-- <button class="btns">+</button> -->
         </div>
@@ -42,8 +45,8 @@
 <style lang="scss" scoped>
   .contains {
     text-align: center;
-    height: 600px;
-    padding: 40px 0 0;
+    height: 900px;
+    padding: 80px 0 0;
 
     // .btns {
     //   position: relative;
@@ -86,10 +89,13 @@
         background-repeat: no-repeat;
         align-items: center;
         justify-content: center;
-        color: #ffffff;
+        color: #1b1919;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.9s;
+        h2 {
+          margin-top: 410px;
+        }
 
         // h2 {
         //   @keyframes change {
@@ -130,13 +136,16 @@
           height: 350px;
         }
         &:hover {
-          transform: scale(1.2);
+          // transform: scale(1.2);
+        }
+        &:hover h4 {
+          transform: scale(1.3);
         }
         &:hover h2 {
           transform: scale(1.3);
         }
         &:hover p {
-          transform: scale(1.4);
+          transform: scale(1.2);
         }
       }
       .bgs {
@@ -149,10 +158,14 @@
         background-repeat: no-repeat;
         align-items: center;
         justify-content: center;
-        color: #ffffff;
+        color: #141313;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.9s;
+        h2 {
+          margin-top: 410px;
+        }
+
         &::before {
           content: "";
           display: block;
@@ -170,13 +183,16 @@
           height: 350px;
         }
         &:hover {
-          transform: scale(1.2);
+          // transform: scale(1.2);
+        }
+        &:hover h4 {
+          transform: scale(1.3);
         }
         &:hover h2 {
           transform: scale(1.3);
         }
         &:hover p {
-          transform: scale(1.4);
+          transform: scale(1.2);
         }
       }
     }
@@ -184,8 +200,9 @@
   @media only screen and (min-width: 375px) and (max-width: 450px) {
     .contains {
       width: 100%;
-      height: 500px;
-      margin-bottom: 230px;
+      height: 1000px;
+      // margin-bottom: 230px;
+
       .contain {
         width: 100%;
         padding: 0 25px;
@@ -199,14 +216,22 @@
           height: 300px;
 
           background-size: contain;
+          h2 {
+            margin-top: 320px;
+          }
+          p {
+          }
         }
         .bgs {
           width: 100%;
 
           height: 300px;
 
-          margin-top: 10px;
+          margin-top: 120px;
           background-size: contain;
+          h2 {
+            margin-top: 320px;
+          }
         }
       }
     }

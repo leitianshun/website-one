@@ -16,10 +16,10 @@
           <input v-model="phone" type="number" class="item" placeholder="请输入手机号" />
         </div>
         <div>
-          <input v-model="theme" type="text" class="item" placeholder="请输入主题" />
+          <input v-model="subject" type="text" class="item" placeholder="请输入主题" />
         </div>
         <div>
-          <textarea v-model="text" name="留言" class="textarea" placeholder="留言" cols="30" rows="10"></textarea>
+          <textarea v-model="message" name="留言" class="textarea" placeholder="留言" cols="30" rows="10"></textarea>
         </div>
         <div class="btn-contain">
           <button class="btn" @click="submit">
@@ -54,11 +54,11 @@
                 d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
             </svg>
           </i>
-          我们将致力于更好的服务于您
+          我们将致力于更好的服务
         </h3>
-        <h4>怀宁县大雄山泉水开发有限公司</h4>
-        <h4>地址：安徽省安庆市怀宁县江镇镇新联村</h4>
-        <h4>订水电话:400-9123009</h4>
+        <h4>公司地址：怀宁县大雄山泉水开发有限公司</h4>
+        <h4>水厂地址：安徽省安庆市怀宁县江镇镇新联村</h4>
+        <h4>订水电话：0556-4629268</h4>
       </div>
     </div>
   </div>
@@ -66,6 +66,7 @@
 <script>
   import PageTop from "../../components/PageTop.vue";
   import { cdnUrl } from "@/common/setting";
+  import { sendMessage } from "@/api/contact";
 
   export default {
     name: "ContactUs",
@@ -75,9 +76,9 @@
         cdnUrl,
         name: "",
         phone: "",
-        theme: "",
-        amail: "",
-        text: "",
+        subject: "",
+        email: "",
+        message: "",
       };
     },
     methods: {
@@ -85,7 +86,22 @@
         if (this.name === "" || this.phone === "" || this.theme === "" || this.email === "" || this.text === "") {
           this.$toast.info("请完整输入内容后提交 ⊙﹏⊙‖∣°");
         } else {
-          this.$toast.success("已收到你的留言~@^_^@~");
+          const params = {
+            name: this.name,
+            message: this.message,
+            phone: this.phone,
+            email: this.email,
+            subject: this.subject,
+          };
+          sendMessage(params)
+            .then((res) => {
+              if (res.code === 200) {
+                this.$toast.success("已收到你的留言~@^_^@~");
+              }
+            })
+            .catch((err) => {
+              this.$toast.error("提交失败" + err);
+            });
         }
       },
     },
@@ -99,10 +115,10 @@
       // background-color: rgb(246, 247, 241);
       background-color: white;
 
-      padding: 50px 100px;
+      padding: 80px 80px;
       // margin-top: -20px;
       width: 100%;
-      height: 700px;
+      height: 750px;
       display: flex;
       .contactus {
         width: 60%;
@@ -195,7 +211,7 @@
         }
       }
       .rightbar {
-        width: 500px;
+        width: 530px;
         // border: 1px solid red;
         margin-left: 50px;
         transition: all 1s;
@@ -210,7 +226,7 @@
         border-radius: 20px;
 
         h3 {
-          margin-top: 120px;
+          margin: 100px 0 80px;
           text-align: center;
           color: white;
         }
@@ -227,7 +243,7 @@
         h4 {
           color: white;
 
-          margin-top: 50px;
+          margin-top: 30px;
           padding: 0 20px;
         }
       }
@@ -237,11 +253,12 @@
     .contact {
       width: 100%;
       height: 1300px;
+
       .contain {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 0 20px;
+        padding: 25px 20px;
         .contactus {
           width: 100%;
           .btn-contain {
@@ -255,7 +272,7 @@
         }
         .rightbar {
           width: 100%;
-          // height: 600px;
+          // height: 400px;
           margin: 50px 0 0;
           h3 {
             margin: 20px 0 0;

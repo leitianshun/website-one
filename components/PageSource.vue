@@ -48,7 +48,7 @@
   @media only screen and (max-width: 450px) {
     .contains {
       width: 100%;
-      height: 600px;
+      height: 500px;
       position: relative;
 
       .text {
@@ -71,7 +71,7 @@
       }
       img {
         width: 100%;
-        height: 260px;
+        height: 150px;
         position: absolute;
         bottom: 0;
         left: 0;

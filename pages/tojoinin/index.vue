@@ -147,7 +147,9 @@
           text-align: left;
           margin: 20px 0 100px;
           width: 100%;
+          height: 350px;
           padding: 0 20px;
+          // margin-bottom: 30px;
         }
       }
       .service {
