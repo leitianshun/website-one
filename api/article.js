@@ -3,7 +3,7 @@ import { tenantId } from "@/common/setting.js";
 
 const getArticleIdList = () => {
   return http.request({
-    url: "/cms/article/listAllId",
+    url: "blade-cms/article/listAllId",
     method: "get",
     params: {
       tenantId
@@ -17,7 +17,7 @@ const getArticleDetail = (id) => {
     id,
   };
   return http.request({
-    url: "/cms/article/detail",
+    url: "blade-cms/article/detail",
     method: "get",
     params: {
       ...paramWithTenanId,
@@ -27,7 +27,7 @@ const getArticleDetail = (id) => {
 
 const getArticleCategoryTreeList = () => {
   return http.request({
-    url: "/cms/category/tree-list",
+    url: "blade-cms/category/tree-list",
     method: "get",
     params: {
       tenantId,
@@ -40,7 +40,7 @@ const getArticleCategoryList = (current, size) => {
     tenantId,
   };
   return http.request({
-    url: "/cms/category/list",
+    url: "blade-cms/category/list",
     method: "GET",
     params: {
       ...paramWithTenant,
@@ -55,7 +55,7 @@ const getArticleTagList = (current, size) => {
     tenantId,
   };
   return http.request({
-    url: "/cms/tag/list",
+    url: "blade-cms/tag/list",
     method: "GET",
     params: {
       ...paramWithTenant,
@@ -71,7 +71,7 @@ const getArticlesList = (current, size, params) => {
     tenantId,
   };
   return http.request({
-    url: "/cms/article/page",
+    url: "blade-cms/article/page",
     method: "GET",
     params: {
       ...paramWithTenant,
